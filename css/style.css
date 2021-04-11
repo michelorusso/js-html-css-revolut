@@ -39,6 +39,10 @@ a i {
     color: black;
 }
 
+.activate {
+    display: none;
+}
+
 /* NAV */
 nav {
     display: flex;
@@ -107,3 +111,126 @@ button:focus {
     outline: 0;
 }
 
+
+/* burger-menu */ 
+.burger-menu {
+    display: none;
+}
+
+.link {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(59, 59, 172);
+    color: white;
+    padding: 15px 0;
+    text-align: left;
+}
+
+.link .menu li {
+    display: block;
+    padding: 10px 30px;
+}
+
+.link .menu a {
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Media query */
+@media all and (max-width: 768px) {
+
+    .logo {
+        width: 20%;
+    }
+
+    .menu-left, 
+    .menu-right {
+        display: none;
+    }
+
+    .menu li {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .burger-menu {
+        display: block;
+        width: 80%;
+        text-align: right;
+    }
+
+    .burger-menu i {
+        font-size: 20px;
+        color: #0d98d3;
+    }
+
+    .link {
+        top: 50px;
+    }
+
+}
+
+@media all and (min-width: 769px) and (max-width: 991px) {
+
+    .logo {
+        width: 15%;
+    }
+
+    .menu-left {
+        width: 70%;
+    }
+    .menu-left li{
+        display: inline;
+    }
+
+    .menu-right {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        width: 15%;
+        text-align: right;
+    }
+
+    .burger-menu i {
+        font-size: 20px;
+        color: #0d98d3;
+    }
+
+    .link {
+        top: 60px;
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+
+    .logo {
+        width: 15%;
+    }
+
+    .menu-left {
+        width: 70%;
+    }
+    .menu-left li{
+        display: inline;
+    }
+
+    .menu-right {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        width: 15%;
+        text-align: right;
+    }
+
+    .burger-menu i {
+        font-size: 20px;
+        color: #0d98d3;
+    }
+
+}
